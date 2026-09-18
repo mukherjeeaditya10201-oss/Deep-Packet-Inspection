@@ -4,8 +4,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * Aggregate counters for the run, printed as a summary once processing
- * finishes (mirrors the "forwarded vs dropped" report the original
- * engine prints).
+ * finishes (for the "forwarded vs dropped" summary report).
  */
 public final class DpiStats {
 

@@ -12,9 +12,9 @@ import java.util.concurrent.atomic.AtomicLong;
  * Holds the active block lists (IPs, domain keywords, and named apps
  * expanded into domain keywords) and decides what to do with each packet.
  *
- * The "postman" analogy from the original design: this is the part that
- * actually reads the envelope (headers) and, once known, the SNI, and
- * decides whether the letter gets delivered or thrown away.
+ * The decision engine: this is the part that reads the envelope (headers)
+ * and, once known, the SNI, and decides whether the packet gets delivered
+ * or thrown away.
  */
 public final class RuleEngine {
 

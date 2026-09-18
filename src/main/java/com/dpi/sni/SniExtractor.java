@@ -9,8 +9,7 @@ import java.util.Optional;
  *
  * This is a "single packet" extractor: it does not perform TCP stream
  * reassembly, so a ClientHello split unusually across multiple TCP
- * segments will simply not be seen - the same simplification the
- * original engine made. In practice the ClientHello (and its SNI
+ * segments will simply not be seen. In practice the ClientHello (and its SNI
  * extension) almost always lands in the very first data segment of a
  * TLS connection, which is the case this is built to catch.
  */
